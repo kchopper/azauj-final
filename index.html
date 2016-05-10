@@ -1,12 +1,107 @@
-<html>
+<!-- MGA on Tue May 10 2016:  -->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>
-    mubashir
-    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Azauj</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .yourButton {
+            position: relative;
+            width: 140px;
+            height: 40px;
+            margin-left: 40px;
+            color: ;
+            background-color: red;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+        }
+        
+        .yourButton:before {
+            content: "";
+            position: absolute;
+            right: 97%;
+            top: 0px;
+            width: 10px;
+            height: 0px;
+            border-top: 20px solid transparent;
+            border-right: 20px solid blue;
+            border-bottom: 18px solid transparent;
+            border-radius: 5px;
+        }
+        
+        .yourButton:after {
+            content: "";
+            position: absolute;
+            left: 98%;
+            top: 0px;
+            width: 10px;
+            height: 0px;
+            border-top: 20px solid transparent;
+            border-left: 20px solid blue;
+            border-bottom: 18px solid transparent;
+            border-radius: 5px;
+        }
+        
+        .nav > li > a:hover,
+        .nav > li > a:focus {
+            text-decoration: none;
+            background-color: green;
+        }
+        
+        .nav > li.disabled > a {
+            color: #777;
+        }
+        
+        .nav > li.disabled > a:hover,
+        .nav > li.disabled > a:focus {
+            color: #777;
+            text-decoration: none;
+            cursor: not-allowed;
+            background-color: transparent;
+        }
+        .nav>li>a {
+            padding: 0px;}
+    </style>
+
 </head>
+
 <body>
-    <div class="container">
-        <p>Hi</p>
-    </div>
+
+    <ul class="nav nav-pills">
+        <li role="presentation" class="yourButton"><a href="#">Intro</a></li>
+        <li role="presentation" class="yourButton"><a href="#">About Us</a></li>
+        <li role="presentation" class="yourButton"><a href="#">Sevices</a></li>
+        <li role="presentation" class="yourButton"><a href="#">Blog</a></li>
+    </ul>
+
+
+
+    <button type="button" class="yourButton">Default</button>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+    <script src="/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
+</html>
+
+</div>
+</body>
+
 </html>
